@@ -45,7 +45,7 @@ Winner: Haskell & Elixir
 ### Syntax Style
 Note: In order of worst to best, on a scale of one to ten.
 
-- JavaScript: 3 - Very verbose keywords, lots of syntactic noise (-9), but with a few good ideas sprinkled in there (+2).
+- JavaScript: 5 - Very verbose keywords, lots of syntactic noise (-9), but with a few good ideas sprinkled in there (+4).
 - Elixir: 6 - Incosistent and strangly illogical, with many edge-cases (-5). Very clean and not very noisy (+1).
 - Erlang: 8 - Sometimes incosistent, with a lazy parser that needs lots of qualifications (-5). Clean, simple, and declarative (+3).
 - Haskell: 9.5 - Lots of syntactic sugar that isn't strictly necissary (-0.5). Clean, consistent, no noise, conveinient, easy to read, genius, great type syntax. (+10).
