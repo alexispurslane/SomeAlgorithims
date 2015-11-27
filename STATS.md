@@ -16,11 +16,11 @@ Winner: Haskell & Erlang
 Note: This includes looking at documentation and Googling stuff.
 
 - JavaScript: By far the longest, at around 30mins
-- Elixir: ~20mins
-- Erlang - ~15mins
+- Elixir: ~15mins
+- Erlang - ~13mins
 - Haskell - ~13mins
 
-Winner: Haskell
+Winner: Haskell & Erlang
 
 ### High-levelness Stats
 Note: This is partly a matter of opinion.
@@ -47,6 +47,6 @@ Winner: Haskell & Elixir
 | Language   | Score |
 | -----------|------ |
 | Haskell    | 4     |
-| Erlang     | 1     |
+| Erlang     | 2     |
 | Elixir     | 2     |
 | JavaScript | 0     |
