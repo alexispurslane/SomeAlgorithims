@@ -61,7 +61,8 @@ Also, this only counts third-party stuff, not stuff from the STDLIB
 - Elixir: 864+ (Erlang libraries + Awesome-Elixir library list. This may not be all)
 - Erlang: 101 (From ekalinin.github.io/erlang-libs)
 
-Winner: Haskell & JavaScript
+Winner: Haskell
+Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**.
 
 ## Language Score:
 
@@ -70,4 +71,4 @@ Winner: Haskell & JavaScript
 | Haskell    | 6     |
 | Erlang     | 3     |
 | Elixir     | 2     |
-| JavaScript | 1     |
+| JavaScript | 0.5   |
