@@ -44,9 +44,9 @@ Winner: Haskell & Elixir
 
 ## Language Score:
 
-Language | Score
-----------------
-Haskell | 4
-Erlang | 1
-Elixir | 2
-Javascript | 0
+| Language   | Score |
+| -----------|------ |
+| Haskell    | 4     |
+| Erlang     | 1     |
+| Elixir     | 2     |
+| JavaScript | 0     |
