@@ -1,5 +1,5 @@
-# Round 1
-## MapReduce
+# Round 1: MapReduce
+## Statistics
 
 ### Lines Of Code Stats
 Note: I'm adding blank lines and newlines here and there. The point is not the shortest possible amount of code, but good, idiomatic code that you should write, but as short as possible.
@@ -37,7 +37,16 @@ Note: In order of worst to best.
 
 - Erlang - The pit of insanity. Basically every error is: "Error before end." And thats it.
 - JavaScript - Pretty awefully bad.
-- Elixir - OK, not great, but good and do the job.
+- Elixir - Really good, with suggestions, but little to no information about where the error happened
 - Haskell - Really awesomely good and detailed, and WITH SUGGESTIONS TO BOOT. But definiatly not as good as they could be, especially with the sometimes strange type info.
 
-Winner: Haskell
+Winner: Haskell & Elixir
+
+## Language Score:
+
+Language | Score
+----------------
+Haskell | 4
+Erlang | 1
+Elixir | 2
+Javascript | 0
