@@ -42,6 +42,46 @@ Note: In order of worst to best.
 
 Winner: Haskell & Elixir
 
+# Round 2: Multi-directional Temperature Converter
+## Statistics
+
+### Lines Of Code
+- Haskell: 3LOC
+- Erlang: 5LOC
+- JavaScript: 7LOC
+- Elixir: 8LOC
+
+Winner: Haskell
+
+### Development Speed
+- Haskell: ~1min
+- Erlang: ~2min (I had to figure out wether a non-caps name is an atom. This confused me slightly)
+- JavaScript: ~2mins (Mostly becouse I knew the language better than the other two, and most of the time it was just typing)
+- Elixir: ~4min (I was confused by the single-line function syntax, and needed to look up how to use atoms)
+
+Winner: Haskell
+
+### High-levelness
+
+Ok, this time, Elixir, Erlang, and Haskell had pretty much the same code, with a few minor syntax differences (In Haskell, I also had to use strings instead of atoms, and becouse of that, Haskell loses this round by a bit.)
+
+- Erlang
+- Haskell
+- Elixir
+And, way lower than those three:
+- JavaScript
+
+Winner: Erlang
+
+### Error Message Helpfulness
+
+I actually had some errors with Elixir and Erlang. For Erlang, it was a tiny mistake with forgetting that the `export` keyword takes an array. With Elixir, it was a syntactic error with forgetting an `end` statement. In both cases, they majorly failed to give any useful information.
+
+Winner: Haskell
+
+
+# Overall Remarks
+
 ### Syntax Style
 Note: In order of worst to best, on a scale of one to ten.
 
@@ -64,11 +104,11 @@ Also, this only counts third-party stuff, not stuff from the STDLIB
 Winner: Haskell
 Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**.
 
-## Language Score:
+# Language Score:
 
 | Language   | Score |
 | -----------|------ |
-| Haskell    | 6     |
-| Erlang     | 3     |
+| Haskell    | 8     |
+| Erlang     | 4     |
 | Elixir     | 2     |
 | JavaScript | 0.5   |
