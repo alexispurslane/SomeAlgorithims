@@ -8,7 +8,7 @@ Also, I am comparing the *base* language, with no extra frameworks or libraries.
 - JavaScript: 16LOC
 - Elixir: 9LOC
 - Erlang: 6LOC
-- Haskell: 6LOC
+- Haskell: 5LOC
 
 Winner: Haskell & Erlang
 
@@ -79,7 +79,6 @@ I actually had some errors with Elixir and Erlang. For Erlang, it was a tiny mis
 
 Winner: Haskell
 
-
 # Overall Remarks
 
 ### Syntax Style
@@ -102,7 +101,7 @@ Also, this only counts third-party stuff, not stuff from the STDLIB
 - Erlang: 101 (From ekalinin.github.io/erlang-libs)
 
 Winner: Haskell
-Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**.
+Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**
 
 # Language Score:
 
