@@ -1,4 +1,4 @@
--module(rpn).
+-module(rpn). % Two hours.
 -compile(export_all).
 to_expr(Str) -> case Str of
                     "+" -> add;
@@ -37,4 +37,5 @@ eval_expr(Expr, Stack) -> case Expr of
                                      NewStack ++ [Result];
                               _Else -> Stack ++ [Expr]
                           end.
-rpn(Str) -> hd(lists:foldl(fun eval_expr/2, [], lists:map(fun to_expr/1, string:tokens(Str, " ")))).
+
+rpn(Str) -> lists:foldl(fun eval_expr/2, [], lists:map(fun to_expr/1, string:tokens(Str, " "))).

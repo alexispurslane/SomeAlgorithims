@@ -1,4 +1,4 @@
-module RPN where
+module RPN where -- 20mins
 data Expr = Number Int
                 | Add
                 | Subtract
@@ -15,7 +15,7 @@ rpn = foldl evalExpr [] . words
                                     Add -> stackDrop stack ++ [sum . stackTake $ stack]
                                     Subtract -> stackDrop stack ++ [foldl (-) 0 (stackTake stack)]
                                     Multiply -> stackDrop stack ++ [product (stackTake stack)]
-                                    Divide -> stackDrop stack ++ [foldl div 1 (stackTake stack)]
+                                    Divide -> stackDrop stack ++ [foldr div 1 (stackTake stack)]
                                     Power -> stackDrop stack ++ [foldl (^) 1 (stackTake stack)]
                                     Abs -> (reverse . drop 1 . reverse $ stack) ++ [abs . head $ (reverse . take 1 . reverse $ stack)]
                                     otherwise -> stack
