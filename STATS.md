@@ -103,11 +103,72 @@ Also, this only counts third-party stuff, not stuff from the STDLIB
 Winner: Haskell
 Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**
 
+# Round 3: Reverse-Polish-Notation Calculator
+## Statistics
+
+### Lines Of Code
+- Haskell: 14LOC
+- Elixir: 18LOC
+- Erlang: 19LOC
+- JavaScript: 33LOC
+
+Winner: Haskell
+
+### Development Speed
+- Haskell: ~10mins
+- Elixir: ~15min
+- JavaScript: ~15mins
+- Erlang: ~2hrs
+
+Winner: Haskell
+
+### High-levelness
+
+- Haskell
+- Elixir
+- Erlang
+
+And, way lower than those three:
+- JavaScript
+
+Winner: Haskell
+
+### Error Message Helpfulness
+
+Erlang's error messages are just plain evil!
+
+Winner: Haskell
+
+# Overall Remarks
+
+### Syntax Style
+Note: In order of worst to best, on a scale of one to ten.
+
+- JavaScript: 5 - Very verbose keywords, lots of syntactic noise (-9), but with a few good ideas sprinkled in there (+4).
+- Elixir: 6 - Incosistent and strangly illogical, with many edge-cases (-5). Very clean and not very noisy (+1).
+- Erlang: 8 - Sometimes incosistent, with a lazy parser that needs lots of qualifications (-5). Clean, simple, and declarative (+3).
+- Haskell: 9.5 - Lots of syntactic sugar that isn't strictly necissary (-0.5). Clean, consistent, no noise, conveinient, easy to read, genius, great type syntax. (+10).
+
+Winner: Haskell & Erlang
+
+### Framework & Library Support
+Note: This is a tally from each languages main package site, or, if not that, whatever other most reliable source I could find.
+Also, this only counts third-party stuff, not stuff from the STDLIB
+
+- Haskell: 12,063 (From hackage.haskell.org)
+- JavaScript: 975 (From javascripting.com)
+- Elixir: 864+ (Erlang libraries + Awesome-Elixir library list. This may not be all)
+- Erlang: 101 (From ekalinin.github.io/erlang-libs)
+
+Winner: Haskell
+Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**
+
+
 # Language Score:
 
 | Language   | Score |
 | -----------|------ |
-| Haskell    | 8     |
+| Haskell    | 12    |
 | Erlang     | 4     |
 | Elixir     | 2     |
 | JavaScript | 0.5   |
