@@ -9,7 +9,7 @@ defmodule RPN do
                 "*" -> stack_op(stack, fn (x, y) -> x * y end)
                 "-" -> stack_op(stack, fn (x, y) -> x - y end)
                 "/" -> stack_op(stack, fn (x, y) -> x / y end)
-                "^" -> stack_op(stack, fn (x, y) -> x ^ y end)
+                "^" -> stack_op(stack, fn (x, y) -> Math.pow(x, y) end)
                 "|" -> stack_op(stack, fn (x, _) -> Kernel.abs(x) end)
                 other -> stack ++ [String.to_integer(expr)]
             end
