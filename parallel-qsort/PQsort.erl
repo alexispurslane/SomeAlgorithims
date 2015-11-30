@@ -1,19 +1,21 @@
 -module(pqsort).
 -export([pqsort/1]).
 
-pqsort_worker(Listener, []) -> Listener ! {self(), []};
-pqsort_worker(Listener, [H | T]) ->
-    PID_1 = spawn_link(pqsort, fun pqsort_worker/2, [self(), [ X || X <- T, H >= X ]]),
-    PID_2 = spawn_link(pqsort, fun pqsort_worker/2, [self(), [ Y || Y <- T, H < Y ]]),
+pqsort([]) -> [];
+pqsort([Pivot|Rest]) ->
+    Left = [X || X <- Rest, X < Pivot],
+    Right = [Y || Y <- Rest, Y >= Pivot],
+    peval(fun pqsort/1, Left) ++ [Pivot] ++ peval(fun pqsort/1, Right).
+
+peval(Fun, Args) ->
+    Pid = spawn_link(fun() -> wait() end),
+    Pid ! {self(), Fun, Args},
     receive
-        {PID_1, List_1} ->
-            receive
-                {PID_2, List_2} -> Listener ! {self(), List_1 ++ [H] ++ List_2}
-            end;
-        {PID_2, List_2} ->
-            receive
-                {PID_1, List_1} -> Listener ! {self(), List_1 ++ [H] ++ List_2}
-            end
+        {Pid, R} -> R
     end.
 
-pqsort(List) -> element(2, pqsort_worker(self(), List)).
+wait() ->
+    receive
+        {From,Fun,Args} ->
+            From ! {self(), Fun(Args)}
+    end.
