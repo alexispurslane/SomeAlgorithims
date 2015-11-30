@@ -115,12 +115,12 @@ Becouse JavaScript has a very heft amount of libraries, and seems to be way ahea
 Winner: Haskell
 
 ### Development Speed
-- Haskell: ~10mins
-- Elixir: ~15min
+- Haskell: ~12mins
+- Elixir: ~12min
 - JavaScript: ~15mins
 - Erlang: ~2hrs
 
-Winner: Haskell
+Winner: Haskell & Elixir
 
 ### High-levelness
 
@@ -138,6 +138,11 @@ Winner: Haskell
 Erlang's error messages are just plain evil!
 
 Winner: Haskell
+
+# Round 4: Parallel Qsort
+Note: For Haskell, where the parallel STDLIB is optional, you may have to install it. It is part of the core library, but it is not distributed sometimes.
+Also, for JavaScript, which doesn't nativly support any parallel processing at all, I'm allowing it to cheat and use a 3rd party library, ParallelJS.
+
 
 # Overall Remarks
 
@@ -163,12 +168,11 @@ Also, this only counts third-party stuff, not stuff from the STDLIB
 Winner: Haskell
 Becouse JavaScript has a very heft amount of libraries, and seems to be way ahead of both Elixir and Erlang, I'm going to give good ol' JS a **consolation prize**
 
-
 # Language Score:
 
 | Language   | Score |
 | -----------|------ |
 | Haskell    | 12    |
 | Erlang     | 4     |
-| Elixir     | 2     |
+| Elixir     | 3     |
 | JavaScript | 0.5   |
