@@ -140,9 +140,43 @@ Erlang's error messages are just plain evil!
 Winner: Haskell
 
 # Round 4: Parallel Qsort
+## Statistics
 Note: For Haskell, where the parallel STDLIB is optional, you may have to install it. It is part of the core library, but it is not distributed sometimes.
-Also, for JavaScript, which doesn't nativly support any parallel processing at all, I'm allowing it to cheat and use a 3rd party library, ParallelJS.
+Also note that no Webkit Javascript implementations support nested WebWorkers (the Javascript version of processes). Only the Firefox browser supports them as yet. Therefor **My Javascript implementation of a parallel quicksort will only work in Firefox**.
 
+## Lines of Code
+
+- Haskell: 10LOC
+- Elixir: 18LOC
+- Erlang: 21LOC
+- JavaScript: 42LOC
+
+Winner: Haskell
+
+## Development Speed
+- Haskell: ~10mins
+- Elixir: ~10mins
+- Erlang: ~30mins (I had to some trouble with first-class functions. I was converting it to an atom on accident. Some inconsistent syntax here!)
+- Javascript: >3hrs
+
+Winner: Haskell
+
+## High-levelness
+
+- Haskell: Clean, easy to read, very highlevel
+- Erlang: A little lower level, required some functions to be written becouse there were no library functions to evaluate a function on a thread and then return the result.
+- Elixir: Has some slightly complex interconnnections and parenting relationships going on, but did pretty well anyway.
+- JavaScript: Slightly worse then some similar C code I've seen. At least C code deosnt require a seperate file, or a binary formatted code block. And binary formatting requires a URL. Who knew!
+
+Winner: Haskell
+
+## Error message helpfulness
+
+- Javascript's multi-thread errors are actually pretty good, considering!
+- Erlang's error messages have the information there, but are not easy to read.
+- Elixir's error messages have little information about what happened, but on occation, they have really good, awesome suggestions.
+
+Winner: Javascript
 
 # Overall Remarks
 
@@ -172,7 +206,7 @@ Becouse JavaScript has a very heft amount of libraries, and seems to be way ahea
 
 | Language   | Score |
 | -----------|------ |
-| Haskell    | 12    |
+| Haskell    | 15    |
 | Erlang     | 4     |
 | Elixir     | 3     |
-| JavaScript | 0.5   |
+| JavaScript | 2     |
